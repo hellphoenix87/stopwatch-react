@@ -1,0 +1,65 @@
+.stopwatch-container {
+  text-align: center;
+}
+
+.counter {
+  font-size: 10rem;
+  font-weight: 700;
+  color: #bbff00;
+  margin: 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #2ecc71; /* Green color */
+  color: white; /* Text color */
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-right: 10px; /* Add margin to create spacing between buttons */
+}
+
+button:last-child {
+  margin-right: 0; /* Remove margin for the last button to avoid extra spacing */
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+.heartbeat-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heartbeat-animation {
+  animation: heartbeat 1s infinite;
+}
+
